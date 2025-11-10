@@ -1,82 +1,52 @@
 {
     "images": [
-        {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
-        },
-        {
-            "imgPath": "img/places/austria.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
-        },
-        {
-            "imgPath": "img/places/france.jpg",
-            "imgLocation": "Paris",
-            "description": "Eiffel Tower",
-            "date": "01/03/2016"
-        },
-        {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
-        },
-        {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
-        },
-        {
-            "imgPath": "img/places/india.jpg",
-            "imgLocation": "India",
-            "description": "Taj Mahal",
-            "date": "01/06/2016"
-        },
-        {
-            "imgPath": "img/places/italy.jpg",
-            "imgLocation": "Italy",
-            "description": "Venice",
-            "date": "01/07/2016"
-        },
-        {
-            "imgPath": "img/places/japan.jpg",
-            "imgLocation": "Japan",
-            "description": "Hirosaki Castle",
-            "date": "01/08/2016"
-        },
-        {
-            "imgPath": "img/places/korea.jpg",
-            "imgLocation": "South Korea",
-            "description": "Seoul",
-            "date": "01/09/2016"
-        },
-        {
-            "imgPath": "img/places/norway.jpg",
-            "imgLocation": "Norway",
-            "description": "Countryside mountains",
-            "date": "01/10/2016"
-        },
-        {
-            "imgPath": "img/places/switzerland.jpg",
-            "imgLocation": "Switzerland",
-            "description": "Lake castle",
-            "date": "01/11/2016"
-        },
-        {
-            "imgPath": "img/places/thailand.jpg",
-            "imgLocation": "Thailand",
-            "description": "Beachline",
-            "date": "01/12/2016"
-        },
-        {
-            "imgPath": "img/places/turkey.jpg",
-            "imgLocation": "Turkey",
-            "description": "Istanbul",
-            "date": "01/13/2016"
-        }
+    {
+        "imgPath": "img/races/asbury-5k.png",
+        "imgLocation": "Asbury Park, NJ",
+        "description": "Asbury Park 5K",
+        "date": "August 9, 2025"
+    },
+    {
+        "imgPath": "img/races/belmar-5.png",
+        "imgLocation": "Belmar, NJ",
+        "description": "Belmar 5 Mile Race",
+        "date": "August 30, 2025"
+    },
+    {
+        "imgPath": "img/races/big-brook.gif",
+        "imgLocation": "Big Brook Park, Marlboro, NJ",
+        "description": "Big Brook 5K Course",
+        "date": "January 3, 2016"
+    },
+    {
+        "imgPath": "img/races/bowdin.jpg",
+        "imgLocation": "Greece",
+        "description": "Greek Coastline",
+        "date": "January 4, 2016"
+    },
+    {
+        "imgPath": "img/races/holmdel-park.jpg",
+        "imgLocation": "Holmdel, NJ",
+        "description": "Holmdel Park Trail, 5 Mile Race",
+        "date": "January 5, 2016"
+    },
+    {
+        "imgPath": "img/races/navesink.png",
+        "imgLocation": "Middletown (Navesink), NJ",
+        "description": "Navesink Challenge 12K & 5K",
+        "date": "November 30, 2025"
+    },
+    {
+        "imgPath": "img/races/ocean-county-park.png",
+        "imgLocation": "Lakewood, NJ",
+        "description": "Ocean County Park 5K",
+        "date": "May 4, 2025"
+    },
+    {
+        "imgPath": "img/races/thompson-park.jpg",
+        "imgLocation": "Lincroft, NJ",
+        "description": "Thompson Park Trail Run",
+        "date": "October 19, 2025"
+    }
   ]
 }
