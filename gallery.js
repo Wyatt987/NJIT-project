@@ -3,8 +3,13 @@ let mImages = [] // Array to hold GalleryImage objects
 const mUrl = 'images.json' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
 
-$(document).ready(() => {
-  $('.details').hide() // Hide details initially
+$(document).ready(() => { // Hide details initially
+    $('.details').hide()
+  startTimer();
+  $('.moreIndicator').click(() => {
+    $('.moreIndicator').toggleClass('rot90 rot270')
+    $('.details').slideToggle()
+  }) 
 
   // Call a function here to start the timer for the slideshow
 
@@ -80,10 +85,16 @@ function showPrevPhoto () {
   }
   swapPhoto();
 }
-
+let mTimer;
 // Starter code for the timer function
 function startTimer () {
   // Create a timer to automatically call `showNextPhoto()` every mWaitTime milliseconds
   // Consider using setInterval to achieve this functionality
   // Hint: Make sure only one timer runs at a time
+    if (mTimer) {
+    clearInterval(mTimer);
+  }
+  mTimer = setInterval(() => {
+    showNextPhoto();
+  }, mWaitTime)
 }
