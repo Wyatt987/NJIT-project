@@ -1,6 +1,6 @@
 let mCurrentIndex = 0 // Tracks the current image index
 let mImages = [] // Array to hold GalleryImage objects
-const mUrl = 'https://your-json-url.com' // Replace with actual JSON URL
+const mUrl = 'images.json' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
 
 $(document).ready(() => {
@@ -39,16 +39,23 @@ function fetchJSON() {
 }
 
 // Function to swap and display the next photo in the slideshow
-function swapPhoto () {
   // Access mImages[mCurrentIndex] to update the image source and details
   // Update the #photo element's src attribute with the current image's path
   // Update the .location, .description, and .date elements with the current image's details
+  function swapPhoto() {
+  let currentImage = mImages[mCurrentIndex];
+  $('#photo').attr('src', currentImage.imgPath);
+  $('.location').text(`Location: ${currentImage.imgLocation}`)
+  $('.description').text(`Description: ${currentImage.imgDescription}`)
+  $('.date').text(`Date: ${currentImage.imgDate}`)
 }
+
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
 function showNextPhoto () {
   // Increment mCurrentIndex and call swapPhoto()
   // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
+  
 }
 
 // Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
