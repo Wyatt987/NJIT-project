@@ -1,9 +1,10 @@
 body {
     overflow-x: hidden;
     font-family: 'Century Gothic', sans-serif;
-    background-image: url('img/bg-pattern.jpg');
+    background-image: url('img/pointA-B.jpg');
     background-size: cover;
     background-attachment: fixed;
+
 }
 
 /* Main container for the slideshow and metadata */
@@ -12,10 +13,10 @@ body {
     max-width: 500px; /* Increased max-width for larger display */
     width: 90%; /* Keeps width responsive */
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    box-shadow: 0 0 15px orange; 
+    border-radius: 10px;
 }
+
 
 /* Holds the displayed photo */
 .photoHolder {
@@ -59,25 +60,47 @@ body {
 
 /* Metadata container styling */
 .details {
-    border: 1px dashed #000;
+    border: 1px #7c7b7b;
+    box-shadow: #ffffff 0px 0px 10px;
     padding: 15px;
     background-color: #f8f9fa; /* Light background to distinguish from main area */
     border-radius: 4px;
-    color: #333;
+    color: #b8b8b8;
     font-size: 1rem; /* Slightly larger text for readability */
 }
-
+#nextPhoto {
+    box-shadow: 0 0 15px orange; 
+    border-radius: 10px;
+}
+#prevPhoto {
+    box-shadow: 0 0 15px orange; 
+    border-radius: 10px;
+}
 /* Style for each paragraph in details */
 .details p {
     margin: 10px 0;
 }
-
+#flow {
+    box-shadow: 0 0 15px orange; 
+    border-radius: 10px;
+}
 /* Add CSS styles to rotate the element 90deg
 Make it animate nicely. You'll need CSS3 for this */
 .rot90 {
     /* Add 90-degree rotation */
     transform: rotate(90deg);
     animation-duration: 0.5s ease-in-out;
+}
+.scale {
+        animation: ScaleUpDown 2s infinite;
+}
+@keyframes ScaleUpDown {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
 }
 
 /* Add CSS styles to rotate the element 180deg
@@ -94,4 +117,8 @@ Make it animate nicely. You'll need CSS3 for this */
     /* Add 270-degree rotation */
         transform: rotate(270deg);
     animation-duration: 0.5s ease-in-out;
+}
+#photo {
+    width: 100vh;
+    height: 50vh;
 }
